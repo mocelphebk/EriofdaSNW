@@ -14,9 +14,6 @@ namespace events::joins
 	{
 	public:
 
-		template<class TSome, class ...TParams>
-		inline EventJoinWrapper(IEvent<TParams...>& _event, TSome&& handler);
-
 		constexpr EventJoinWrapper() noexcept;
 		EventJoinWrapper(EventJoinWrapper&& other) noexcept;
 		EventJoinWrapper(EventJoinWrapper& other) noexcept;
